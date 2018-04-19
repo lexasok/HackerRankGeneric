@@ -1,12 +1,13 @@
 public class Generic {
 
-    public static <E> E printE(E element) {
-        return element;
+    public static <T extends Comparable<T>> T findMax(T a, T b) {
+        int n = a.compareTo(b);
+        if (n < 0) {
+            return b;
+        } else return a;
     }
 
     public static void main(String[] args) {
-
-        System.out.println(Generic.printE(1123123));
 
     }
 }
