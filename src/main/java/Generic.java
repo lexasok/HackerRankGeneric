@@ -9,5 +9,7 @@ public class Generic {
 
     public static void main(String[] args) {
 
+        System.out.println(findMax("asdads","as1111111112"));
+
     }
 }
